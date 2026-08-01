@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سوبر فيتنس - تواصل معنا</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/nav.js"></script>
+</head>
+<body>
+<header class="hero">
+  <nav class="navbar"></nav>
+  <div class="hero-content">
+    <h4>مدربو اللياقة البدنية الشخصية</h4>
+    <h1>كن مستعداً لـ<br><span>تصبح بصحة جيدة</span></h1>
+    <p>يمكنك التواصل معنا</p>
+  </div>
+</header>
+
+<section class="contact-section">
+  <h2>تواصل معنا</h2>
+  <p>املأ النموذج أدناه وسنتواصل معك في أقرب وقت ممكن.</p>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="اسمك" required>
+    <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+    <select name="subject" required>
+      <option value="" disabled selected>اختر الموضوع</option>
+      <option value="Review">مراجعة</option>
+      <option value="Inquiry">استفسار</option>
+      <option value="Feedback">ملاحظات</option>
+      <option value="Other">أخرى</option>
+    </select>
+    <textarea name="message" placeholder="رسالتك" rows="6" required></textarea>
+    <button type="submit">إرسال الرسالة</button>
+    <p class="success-message" id="success-message"></p>
+  </form>
+</section>
+
+<script src="js/Contact.js"></script>
+</body>
+</html>

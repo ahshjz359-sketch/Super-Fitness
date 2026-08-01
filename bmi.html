@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SuperFitness</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bmi.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="js/nav.js"></script>
+</head>
+<body>
+
+  <!-- ===== Header / Hero ===== -->
+  <header class="hero">
+    <nav class="navbar">
+  </nav>
+
+ <div class="hero-content">
+    <h4>PERSONAL GYM TRAINERS</h4>
+    <h1>BE READY TO<br><span>BECOME HEALTHY</span></h1>
+
+    <p>Check your body health in seconds</p>
+  </div>
+</header>
+<!-- ===== What is BMI ===== -->
+<section class="bmi-about">
+  <h2>What is BMI?</h2>
+  <p>
+    Body Mass Index (BMI) is a simple calculation using your height and weight.
+    It helps determine whether your body weight is healthy for your height.
+  </p>
+  <div class="bmi-icons">
+    <div class="icon-box">
+      <i class="fas fa-weight-scale"></i>
+      <p>Track your weight</p>
+    </div>
+    <div class="icon-box">
+      <i class="fas fa-heartbeat"></i>
+      <p>Improve your health</p>
+    </div>
+    <div class="icon-box">
+      <i class="fas fa-apple-alt"></i>
+      <p>Eat balanced diet</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Calculator ===== -->
+<section class="bmi-section" id="calculator">
+  <div class="bmi-box">
+    <h2>Calculate Your BMI</h2>
+
+    <label>Height (cm)</label>
+    <input type="number" id="height" placeholder="170">
+<!--  
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="70">
+  
+-->
+
+
+<label>Weight (kg)</label>
+<input type="number" id="weight" placeholder="70">
+
+<label>Activity Level</label>
+<select id="activity">
+  <option value="0.8">Normal</option>
+  <option value="1.2">Light activity</option>
+  <option value="1.6">Gym / Athlete</option>
+</select>
+
+
+
+    <button class="btn" onclick="calculateBMI()">Calculate</button>
+
+<div class="result">
+  <h3 id="bmi-value">--</h3>
+  <p id="bmi-status">Enter your data</p>
+  <p id="protein"></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- BMI Progress Bar -->
+<div class="bmi-bar">
+  <div class="bar">
+    <div class="underweight">Underweight</div>
+    <div class="normal">Normal</div>
+    <div class="overweight">Overweight</div>
+    <div class="obese">Obese</div>
+  </div>
+</div>
+
+
+    <!--  
+    <div class="result">
+      <h3 id="bmi-value">--</h3>
+      <p id="bmi-status">Enter your data</p>
+    </div>
+  </div>
+</section>
+-->
+
+
+<!-- ===== BMI Table ===== -->
+<section class="bmi-table">
+  <h2>BMI Classification</h2>
+  <table>
+    <tr>
+      <th>BMI Range</th>
+      <th>Category</th>
+    </tr>
+    <tr>
+      <td>Less than 18.5</td>
+      <td>Underweight</td>
+    </tr>
+    <tr>
+      <td>18.5 – 24.9</td>
+      <td>Normal</td>
+    </tr>
+    <tr>
+      <td>25 – 29.9</td>
+      <td>Overweight</td>
+    </tr>
+    <tr>
+      <td>30 or more</td>
+      <td>Obese</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ===== Health Tips ===== -->
+<section class="bmi-tips">
+  <h2>Health Tips</h2>
+  <p id="bmi-tip">Your health tips will appear here after calculation.</p>
+</section>
+
+<!-- ===== Extra Info ===== -->
+<section class="bmi-extra">
+  <h2>Why BMI Matters</h2>
+  <p>
+    Knowing your BMI can help you understand your risk for diseases related to weight,
+    such as heart disease, diabetes, and high blood pressure. Use this calculator
+    regularly to monitor your progress and maintain a healthy lifestyle.
+  </p>
+<a href="https://www.youtube.com/watch?v=yBvJXMduo8k" target="_blank" class="btn">Learn More</a>
+</section>
+
+<script src="js/bmi.js"></script>
+
+</body>
+</html>

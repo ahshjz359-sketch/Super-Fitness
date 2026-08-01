@@ -1,0 +1,236 @@
+
+/* ===== About BMI ===== */
+.bmi-about {
+  padding: 80px 20px;
+  text-align: center;
+  background: #1c1c1c;
+}
+
+.bmi-about h2 {
+  color: #ff7a18;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.bmi-about p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.bmi-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-box i {
+  font-size: 40px;
+  color: #ff7a18;
+}
+
+/* ===== Calculator ===== */
+.bmi-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.bmi-box {
+  background: #1c1c1c;
+  padding: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+
+.bmi-box h2 {
+  color: #ff7a18;
+  margin-bottom: 25px;
+}
+
+.bmi-box label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bmi-box input {
+  width: 80%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.bmi-box button {
+  padding: 12px 30px;
+  background: #ff7a18;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.bmi-box button:hover {
+  background: #e66b10;
+}
+
+.result h3 {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #ff7a18;
+}
+
+.result p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* ===== BMI Table ===== */
+.bmi-table {
+  padding: 80px 20px;
+  text-align: center;
+  background: #111;
+}
+
+.bmi-table h2 {
+  color: #ff7a18;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.bmi-table table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.bmi-table th, .bmi-table td {
+  border: 1px solid #333;
+  padding: 12px;
+}
+
+.bmi-table th {
+  background-color: #ff7a18;
+  color: #111;
+}
+
+/* ===== Tips ===== */
+.bmi-tips {
+  padding: 80px 20px;
+  text-align: center;
+  background: #1c1c1c;
+}
+
+.bmi-tips h2 {
+  color: #ff7a18;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.bmi-tips p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== Extra Info ===== */
+.bmi-extra {
+  padding: 80px 20px;
+  text-align: center;
+  background: #111;
+}
+
+.bmi-extra h2 {
+  color: #ff7a18;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.bmi-extra p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.bmi-extra .btn {
+  padding: 12px 30px;
+  background: #ff7a18;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.bmi-extra .btn:hover {
+  background: #e66b10;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .bmi-icons {
+    flex-direction: column;
+  }
+
+  .bmi-box input {
+    width: 100%;
+  }
+}
+
+
+/*  */
+
+
+
+.bmi-bar {
+  margin-top: 20px;
+}
+
+.bar {
+  display: flex;
+  height: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 12px;
+  color: white;
+}
+
+.bar div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.underweight {
+  background-color: blue;
+}
+
+.normal {
+  background-color: green;
+}
+
+.overweight {
+  background-color: orange;
+}
+
+.obese {
+  background-color: red;
+}

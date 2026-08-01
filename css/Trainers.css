@@ -1,0 +1,106 @@
+
+.trainers {
+  padding: 80px 60px;
+  background: #1c1c1c;
+  text-align: center;
+}
+
+.trainers h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.trainers h2::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #ff7a18;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* ===== TRAINER CARDS ===== */
+.trainer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.trainer {
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trainer:hover {
+  transform: translateY(-10px);
+}
+
+.trainer img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.trainer h4 {
+  font-size: 22px;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.trainer .role {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff7a18;
+  margin-bottom: 10px;
+}
+
+.trainer .bio {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.trainer .experience {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 1024px) {
+  .trainer-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .trainer-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content h4 {
+    font-size: 18px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}

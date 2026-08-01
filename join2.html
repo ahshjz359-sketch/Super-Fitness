@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سوبر فيتنس - انضم الآن</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/join.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/nav.js"></script>
+</head>
+<body>
+<header class="hero">
+  <nav class="navbar"></nav>
+  <div class="hero-content">
+    <h4>مدربو اللياقة البدنية الشخصية</h4>
+    <h1>كن مستعداً لـ<br><span>تصبح بصحة جيدة</span></h1>
+    <p>أدخل بياناتك وابدأ رحلة اللياقة البدنية</p>
+  </div>
+</header>
+
+<section class="join-section">
+  <form id="joinForm">
+    <h2>انضم الآن</h2>
+    <label for="name">الاسم الكامل:</label>
+    <input type="text" id="name" placeholder="اسمك">
+    <label for="age">العمر:</label>
+    <input type="number" id="age" placeholder="عمرك">
+    <label for="height">الطول (سم):</label>
+    <input type="number" id="height" placeholder="طولك">
+    <label for="weight">الوزن (كجم):</label>
+    <input type="number" id="weight" placeholder="وزنك">
+    <label for="gender">الجنس:</label>
+    <select id="gender" required>
+      <option value="">اختر جنسك</option>
+      <option value="Male">ذكر</option>
+      <option value="Female">أنثى</option>
+    </select>
+    <label for="goal">هدف اللياقة:</label>
+    <select id="goal">
+      <option value="">اختر الهدف</option>
+      <option value="Lose Weight">خسارة الوزن</option>
+      <option value="Build Muscle">بناء العضلات</option>
+      <option value="Increase Weight">زيادة الوزن</option>
+      <option value="Stay Fit">الحفاظ على اللياقة</option>
+    </select>
+    <label for="program">اختر البرنامج:</label>
+    <select id="program">
+      <option value="">اختر البرنامج</option>
+      <option value="Basic Plan">الخطة الأساسية</option>
+      <option value="Regular Plan">الخطة الاعتيادية</option>
+      <option value="Premium Plan">الخطة المميزة</option>
+      <option value="Advanced Plan">الخطة المتقدمة</option>
+      <option value="Ultimate Plan">الخطة الشاملة</option>
+      <option value="Pro Athlete Plan">خطة الرياضي المحترف</option>
+    </select>
+    <p id="priceDisplay">السعر: 0$ / شهرياً</p>
+    <label for="trainer">اختر المدرب:</label>
+    <select id="trainer">
+      <option value="">اختر المدرب</option>
+      <option value="Yousef Sameh">يوسف سامح</option>
+      <option value="Amera Yousef">أميرة يوسف</option>
+      <option value="Ramez Khaled">رامز خالد</option>
+      <option value="Huda Sameh">هدى سامح</option>
+      <option value="Khaled Mohammed">خالد محمد</option>
+      <option value="Rouh Ahmed">روح أحمد</option>
+      <option value="Ahmed yaser">أحمد ياسر</option>
+      <option value="Hoor Ahmed">هور أحمد</option>
+      <option value="Mohammed Ahmed">محمد أحمد</option>
+      <option value="Sara Ahmed">سارة أحمد</option>
+      <option value="Reem Ahmed">ريم أحمد</option>
+      <option value="Layla Hassan">ليلى حسن</option>
+    </select>
+    <button type="submit" class="submit-btn">انضم الآن</button>
+  </form>
+</section>
+
+<script src="js/join2.js"></script>
+</body>
+</html>
