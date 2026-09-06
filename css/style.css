@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url("../images/1.jfif") center/cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.logo span {
+  color: #ff7a18;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+}
+
+.hero-content span {
+  color: #ff7a18;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #ff7a18;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.process {
+  padding: 80px;
+  background: #1c1c1c;
+  text-align: center;
+}
+
+.process-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.box {
+  border: 1px solid #333;
+  padding: 40px;
+}
+
+.box i {
+  font-size: 40px;
+  color: #ff7a18;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: #111;
+}
+
+.stat h3 {
+  color: #ff7a18;
+  margin-bottom: 2px;
+  font-size: 32px;
+}
+
+.trainers {
+  padding: 80px;
+  background: #1c1c1c;
+  text-align: center;
+}
+
+.trainer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.trainer img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.trainer h4 {
+margin-bottom: 5px;
+margin-top: 5px;
+}
+
+.testimonials {
+  padding: 80px;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url("../images/2.jfif") center/cover;
+  text-align: center;
+}
+
+.quote {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.facts {
+  background: #ff7a18;
+  color: #111;
+  padding: 60px;
+  text-align: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SuperFitness</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="js/nav.js"></script>
+</head>
+<body>
+
+<!-- ===== Header / Hero ===== -->
+<header class="hero">
+    <nav class="navbar">
+  </nav>
+
+  <div class="hero-content">
+    <h4>PERSONAL GYM TRAINERS</h4>
+    <h1>BE READY TO<br><span>BECOME HEALTHY</span></h1>
+    <p>
+    YOU Can Contact With US
+    </p>
+
+  </div>
+</header>
+
+<section class="contact-section">
+  <h2>Get in Touch</h2>
+  <p>Fill out the form below and we will get back to you as soon as possible.</p>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <select name="subject" required>
+      <option value="" disabled selected>Select Subject</option>
+      <option value="Review">Review</option>
+      <option value="Inquiry">Inquiry</option>
+      <option value="Feedback">Feedback</option>
+      <option value="Other">Other</option>
+    </select>
+    
+    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+    <p class="success-message" id="success-message"></p>
+  </form>
+</section>
+
+<script src="js/Contact.js"></script>
+
+</body>
+</html>

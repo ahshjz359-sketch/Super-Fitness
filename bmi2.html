@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سوبر فيتنس</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bmi.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="js/nav.js"></script>
+</head>
+
+<body>
+  
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <nav class="navbar"></nav>
+
+  <div class="hero-content">
+    <h4>مدربين جيم محترفين</h4>
+    <h1>استعد لتصبح<br><span>أكثر صحة</span></h1>
+    <p>احسب حالتك الصحية في ثواني</p>
+  </div>
+</header>
+
+<!-- ===== BMI Info ===== -->
+<section class="bmi-about">
+  <h2>ما هو مؤشر كتلة الجسم؟</h2>
+  <p>
+    مؤشر كتلة الجسم (BMI) هو طريقة بسيطة لحساب ما إذا كان وزنك مناسب لطولك،
+    ويساعدك على معرفة حالتك الصحية.
+  </p>
+
+  <div class="bmi-icons">
+    <div class="icon-box">
+      <i class="fas fa-weight-scale"></i>
+      <p>تابع وزنك</p>
+    </div>
+
+    <div class="icon-box">
+      <i class="fas fa-heartbeat"></i>
+      <p>حسّن صحتك</p>
+    </div>
+
+    <div class="icon-box">
+      <i class="fas fa-apple-alt"></i>
+      <p>تناول غذاء صحي</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Calculator ===== -->
+<section class="bmi-section" id="calculator">
+  <div class="bmi-box">
+
+    <h2>احسب مؤشر كتلة الجسم</h2>
+
+    <label>الطول (سم)</label>
+    <input type="number" id="height" placeholder="170">
+
+    <label>الوزن (كجم)</label>
+    <input type="number" id="weight" placeholder="70">
+
+    <label>مستوى النشاط</label>
+    <select id="activity">
+      <option value="0.8">نشاط عادي</option>
+      <option value="1.2">نشاط خفيف</option>
+      <option value="1.6">رياضي</option>
+    </select>
+
+    <button class="btn" onclick="calculateBMI()">احسب</button>
+
+    <div class="result">
+      <h3 id="bmi-value">--</h3>
+      <p id="bmi-status">ادخل بياناتك</p>
+      <p id="protein"></p>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="bmi-bar">
+      <div class="bar">
+        <div class="underweight">نحيف</div>
+        <div class="normal">طبيعي</div>
+        <div class="overweight">زيادة</div>
+        <div class="obese">سمنة</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Table ===== -->
+<section class="bmi-table">
+  <h2>تصنيف مؤشر كتلة الجسم</h2>
+
+  <table>
+    <tr>
+      <th>المؤشر</th>
+      <th>الحالة</th>
+    </tr>
+
+    <tr>
+      <td>أقل من 18.5</td>
+      <td>نحيف</td>
+    </tr>
+
+    <tr>
+      <td>18.5 – 24.9</td>
+      <td>طبيعي</td>
+    </tr>
+
+    <tr>
+      <td>25 – 29.9</td>
+      <td>زيادة وزن</td>
+    </tr>
+
+    <tr>
+      <td>30 أو أكثر</td>
+      <td>سمنة</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ===== Tips ===== -->
+<section class="bmi-tips">
+  <h2>نصائح صحية</h2>
+  <p id="bmi-tip">ستظهر النصائح هنا بعد الحساب</p>
+</section>
+
+<!-- ===== Extra ===== -->
+<section class="bmi-extra">
+  <h2>لماذا مؤشر كتلة الجسم مهم؟</h2>
+  <p>
+    يساعدك مؤشر كتلة الجسم على معرفة حالتك الصحية وتقليل خطر الإصابة بالأمراض
+    مثل أمراض القلب والسكري. احرص على متابعة حالتك باستمرار.
+  </p>
+
+  <a href="https://www.youtube.com/watch?v=yBvJXMduo8k" target="_blank" class="btn">
+    اعرف أكثر
+  </a>
+</section>
+
+<script src="js/bmi.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+
+.contact-section {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #ff7a18;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+select option {
+  background-color: #222; 
+  color: #fff; 
+}
+
+select option:checked,
+select option:active {
+  background-color: #ff7a18; 
+  color: #fff;
+}
+
+
+
+input, textarea, select {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #ff7a18;
+}
+
+button {
+  padding: 15px;
+  background: #ff7a18;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e06b12;
+}
+
+.success-message {
+  color: #00ff99;
+  font-weight: bold;
+  display: none;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+  .contact-section h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,53 @@
+.join-section {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.join-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff7a18;
+}
+.join-section p {
+
+  margin-top: 10px;
+
+}
+
+.join-section label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.join-section input,
+.join-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.join-section button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #ff7a18;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-section button:hover {
+  background: #ff4f00;
+}

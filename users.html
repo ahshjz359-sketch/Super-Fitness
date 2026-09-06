@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SuperFitness Admin</title>
+
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+<h2 class="logo">SUPER<span>FITNESS</span></h2>
+
+<ul>
+
+<li><a href="admin.html"><i class="fa fa-table"></i> All</a></li>
+<li class="active"><a href="users.html"><i class="fa fa-user"></i> Users</a></li>
+<li><a href="comments.html"><i class="fa fa-comment"></i> Comments</a></li>
+
+</ul>
+
+</div>
+
+
+<!-- Main -->
+<div class="main">
+
+<h1>Users</h1>
+
+<table>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Age</th>
+<th>Height</th>
+<th>Weight</th>
+<th>Goal</th>
+<th>Program</th>
+<th>Trainer</th>
+<th>Price</th>
+</tr>
+</thead>
+
+
+<tbody id="usersTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="js/users.js"></script>
+
+</body>
+</html>

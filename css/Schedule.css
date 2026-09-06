@@ -1,0 +1,165 @@
+.main-schedule {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 20px;
+    line-height: 1.5;
+}
+
+.main-schedule h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff7a18;
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  background: #1c1c1c;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+thead {
+  background: #222;
+}
+
+thead th {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+tbody td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.class {
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  background: #ff7a18; 
+    border: 1px solid #333;
+
+}
+
+.class span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.class.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.filters {
+  max-width: 1200px;
+  margin: 40px auto 50px;
+
+  text-align: center;
+}
+
+.filters button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.filters button.active,
+.filters button:hover {
+  background: #ff7a18;
+  color: #111;
+}
+
+.today {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+
+}
+
+.today h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff7a18;
+  padding-left: 10px;
+} 
+
+.today .th{
+    background: #111;
+      border:0px solid #111;
+
+}
+.today .ta{
+    background: #ff7a18;
+    border:1px solid #111;
+}
+.today a {
+  background: #ff7a18;
+  color: #111;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.today a:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tbody td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .today-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .today-row span,
+  .today-row a {
+    margin-bottom: 5px;
+  }
+}
