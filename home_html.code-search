@@ -1,0 +1,32 @@
+# Query: home.html
+# ContextLines: 1
+
+6 results - 4 files
+
+js\login.js:
+  19    localStorage.setItem("isAdmin", "false");
+  20:   window.location.href = "index.html";
+  21  });
+
+js\nav.js:
+  11  const PAGE_MAP = [
+  12:   { en: 'home.html',             ar: 'home2.html',             key: 'home' },
+  13    { en: 'About Us.html',         ar: 'About Us2.html',         key: 'about' },
+
+  31    window.location.pathname.split('/').pop()
+  32: ) || 'home.html';
+  33  
+
+Super Fitness\js\login.js:
+  19    localStorage.setItem("isAdmin", "false");
+  20:   window.location.href = "home.html";
+  21  });
+
+Super Fitness\js\nav.js:
+  11  const PAGE_MAP = [
+  12:   { en: 'home.html',             ar: 'home2.html',             key: 'home' },
+  13    { en: 'About Us.html',         ar: 'About Us2.html',         key: 'about' },
+
+  31    window.location.pathname.split('/').pop()
+  32: ) || 'home.html';
+  33  
